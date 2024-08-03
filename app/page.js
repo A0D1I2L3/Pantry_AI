@@ -48,7 +48,7 @@ export default function Home() {
     await deleteDoc(doc(db, "items", id));
   };
 
-  const GROQ_API_KEY = " process.env.NEXT_PUBLIC_GROQ_API_KEY;";
+  const GROQ_API_KEY = process.env.NEXT_PUBLIC_GROQ_API_KEY;
 
   const groq = new Groq({
     apiKey: GROQ_API_KEY,
