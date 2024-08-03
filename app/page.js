@@ -52,7 +52,6 @@ export default function Home() {
 
   const groq = new Groq({
     apiKey: GROQ_API_KEY,
-    dangerouslyAllowBrowser: true,
   });
 
   const generateRecipe = async () => {
